@@ -1,0 +1,1 @@
+ModuleRegistry.register(ReportModule(results))

@@ -1,25 +1,24 @@
 package com.redteam.app
 
-import android.app.Activity
 import android.os.Bundle
-import android.util.Log
-import com.redteam.app.attack_surface.AttackSurfaceScanner
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.redteam.app.core.ModuleRegistry
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
+override fun onCreate(savedInstanceState: Bundle?) {
+super.onCreate(savedInstanceState)
+setContentView(R.layout.activity_main)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+val output = findViewById<TextView>(R.id.output)
+val list = findViewById<RecyclerView>(R.id.toolList)
+list.layoutManager = LinearLayoutManager(this)
 
-        // === Red Team Tool Entry ===
-        val scanner = AttackSurfaceScanner(this)
-        val findings = scanner.scan()
-
-        findings.forEach {
-            Log.d(
-                "RedTeam",
-                "[${it.type}] exported=${it.exported} -> ${it.name}"
-            )
-        }
-    }
+val modules = ModuleRegistry.load(this)
+list.adapter = ToolAdapter(modules) { result ->
+output.text = result.joinToString("\n")
+}
+}
 }

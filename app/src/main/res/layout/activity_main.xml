@@ -1,13 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:background="#0B0F14"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RedTeamApp RUNNING"
-        android:textSize="20sp" />
+<TextView
+android:text="RedTeamApp"
+android:textSize="24sp"
+android:textStyle="bold"
+android:textColor="#FF3B30"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/toolList"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"/>
+
+<TextView
+android:id="@+id/output"
+android:textColor="#00FF9C"
+android:textSize="12sp"
+android:background="#111820"
+android:padding="8dp"
+android:layout_width="match_parent"
+android:layout_height="120dp"
+android:text="> Ready."
+/>
+
 </LinearLayout>
+<ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:visibility="gone"/>
+<TextView android:id="@+id/matrix" android:textColor="#00FF9C" android:textSize="10sp" android:text="010101 RED TEAM ACTIVE 010101" />
