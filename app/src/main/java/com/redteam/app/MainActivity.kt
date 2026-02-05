@@ -1,5 +1,10 @@
-package com.redteam.app\n\nimport android.content.Intent\nimport android.os.Bundle\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.recyclerview.widget.*\nimport android.view.*\nimport android.widget.*\nimport com.redteam.app.modules.*\n\nclass MainActivity:AppCompatActivity(){ override fun onCreate(b:Bundle?){ super.onCreate(b); setContentView(R.layout.activity_main); val rv=findViewById<RecyclerView>(R.id.list); rv.layoutManager=LinearLayoutManager(this); rv.adapter=object:RecyclerView.Adapter<VH>(){\n  override fun onCreateViewHolder(p:ViewGroup,v:Int)=VH(LayoutInflater.from(p.context).inflate(android.R.layout.simple_list_item_2,p,false))\n  override fun getItemCount()=ModuleRegistry.all.size\n  override fun onBindViewHolder(h:VH,i:Int){ val m=ModuleRegistry.all[i]; h.t1.text=m.name; h.t2.text=\"${}{m.desc} • ${}{if(FeatureFlags.isOn(m.id))"🟢" else "🔴"}"; h.itemView.setOnClickListener{ startActivity(Intent(this@MainActivity,DetailActivity::class.java).putExtra("id",m.id)) } }
- }} class VH(v:View):RecyclerView.ViewHolder(v){ val t1=v.findViewById<TextView>(android.R.id.text1); val t2=v.findViewById<TextView>(android.R.id.text2) }
+package com.redteam.app
 
-class DetailActivity:AppCompatActivity(){ override fun onCreate(b:Bundle?){ super.onCreate(b); setContentView(R.layout.activity_detail); val id=intent.getStringExtra("id")!!; val m=ModuleRegistry.all.first{it.id==id}; val title=findViewById<TextView>(R.id.title); val status=findViewById<TextView>(R.id.status); val toggle=findViewById<Button>(R.id.toggle); val export=findViewById<Button>(R.id.export); fun refresh(){ title.text=m.name; status.text="Status: ${}{if(FeatureFlags.isOn(m.id))"READY" else "OFF"}" }
- refresh(); toggle.setOnClickListener{ FeatureFlags.set(m.id,!FeatureFlags.isOn(m.id)); refresh() }; export.setOnClickListener{ val j=m.run(this); Toast.makeText(this,j.toString(),Toast.LENGTH_LONG).show() } }}
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+}
