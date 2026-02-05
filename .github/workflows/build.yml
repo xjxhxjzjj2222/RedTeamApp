@@ -1,31 +1,20 @@
-name: Android FAST CI
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-
+name: Build APK
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    env:
-      GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx3g -Dkotlin.incremental=true -Dorg.gradle.parallel=true"
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
-          cache: gradle
-
-      - name: Grant Gradle permission
-        run: chmod +x gradlew
-
-      - name: Build Release (FAST)
-        run: ./gradlew assembleRelease --build-cache --parallel --no-daemon
-
-      - uses: actions/upload-artifact@v4
+      - name: Grant Gradle
+        run: chmod +x ./gradlew
+      - name: Build Release
+        run: ./gradlew assembleRelease --no-daemon
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
         with:
           name: app-release
           path: app/build/outputs/apk/release/*.apk
