@@ -1,0 +1,1 @@
+package com.redteam.app.modules; import android.content.*; import android.os.*; class EnvAuditModule:Module{override val id="env";override val name="Environment Audit";override var enabled=true;override fun run(c:Context,log:(String)->Unit){log("SDK=${Build.VERSION.SDK_INT},MODEL=${Build.MODEL}")}}

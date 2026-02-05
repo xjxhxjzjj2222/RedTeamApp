@@ -1,12 +1,1 @@
-package com.redteam.app
-
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.redteam.app.modules.ReconModule
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        ReconModule.run()
-    }
-}
+package com.redteam.app; import android.os.*; import androidx.activity.*; import androidx.activity.compose.*; import com.redteam.app.ui.*; import com.redteam.app.modules.*; class MainActivity:ComponentActivity(){override fun onCreate(b:Bundle?){super.onCreate(b); ModuleRegistry.r(EnvAuditModule()); setContent{Dashboard()}}}
