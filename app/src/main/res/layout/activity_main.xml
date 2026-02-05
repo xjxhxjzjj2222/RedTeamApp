@@ -34,3 +34,4 @@ android:text="> Ready."
 </LinearLayout>
 <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:visibility="gone"/>
 <TextView android:id="@+id/matrix" android:textColor="#00FF9C" android:textSize="10sp" android:text="010101 RED TEAM ACTIVE 010101" />
+<TextView android:id="@+id/threat" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THREAT LEVEL: HIGH" android:textColor="#FF3B3B" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:padding="12dp"/>
