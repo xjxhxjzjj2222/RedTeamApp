@@ -8,11 +8,11 @@
         android:theme="@style/Theme.RedTeam">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.redteam.app.ui.MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.redteam.app.ui.MainActivity" />
+                <category android:name="com.redteam.app.ui.MainActivity" />
             </intent-filter>
         </activity>
 
