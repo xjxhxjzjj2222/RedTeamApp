@@ -1,1 +1,6 @@
-package com.redteam.app.modules\n\nobject AuditModule {\n fun run(): String = "Audit module ready"\n}
+package com.redteam.app.modules
+
+object AuditModule {
+    val name: String = "Audit"
+    fun run(): String = "Audit module ready"
+}
