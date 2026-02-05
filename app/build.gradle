@@ -1,5 +1,6 @@
 plugins { id 'com.android.application'; id 'org.jetbrains.kotlin.android' }
 android {
+    namespace "com.xxx.app"
     namespace "com.example.redteamapp"
     compileSdk 34
     defaultConfig {
