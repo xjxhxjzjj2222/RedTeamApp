@@ -35,3 +35,4 @@ class MainActivity : ComponentActivity() {
   }
  }
 }
+MaterialTheme(colorScheme = darkColorScheme(primary = Color(0xFF00FF41))) {

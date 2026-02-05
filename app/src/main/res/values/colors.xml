@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="bg">#0B0F14</color>
-    <color name="primary">#D7263D</color>
-    <color name="text">#E0E0E0</color>
-    <color name="status_ok">#2ECC71</color>
-    <color name="status_warn">#F1C40F</color>
-</resources>
+<resources><color name="neon_green">#00FF41</color><color name="hud_black">#000000</color></resources>
