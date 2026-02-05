@@ -1,7 +1,7 @@
 package com.redteam.app.modules
 
-object ReconModule {
+object ScanModule {
     fun run(): String {
-        return "ReconModule OK"
+        return "ScanModule OK"
     }
 }
