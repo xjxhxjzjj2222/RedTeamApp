@@ -1,2 +1,7 @@
-object RunLog{fun log(c:android.content.Context,t:String){c.openFileOutput("run.log",android.content.Context.MODE_APPEND).write("${System.currentTimeMillis()}:$t
-".toByteArray())}}
+package com.redteam.app
+
+object RunLog {
+    fun d(msg: String) {
+        android.util.Log.d("RunLog", msg)
+    }
+}
