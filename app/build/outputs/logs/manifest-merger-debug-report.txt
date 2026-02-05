@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/4238fa6d39b5bcec23fa696458fa099f/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /data/data/com.termux/files/home/.gradle/caches/transforms-3/a242d972ceccc1bb9ae7119cf9b383b1/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/transforms-3/ae87b137f78feaed399991336257864b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -45,25 +45,25 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /data/data/com.termux/files/
 MERGED from [androidx.documentfile:documentfile:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/f9a5b9ec74d9e721ce370b0a14bbd755/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/f4ce83f4587474856acf53fc06eea0aa/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/805c630fc12908e97772d99c3a3088a0/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:1-21:12
 		INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:5:5-20:19
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:5:5-19:19
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/4238fa6d39b5bcec23fa696458fa099f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /data/data/com.termux/files/home/.gradle/caches/transforms-3/4238fa6d39b5bcec23fa696458fa099f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /data/data/com.termux/files/home/.gradle/caches/transforms-3/ae87b137f78feaed399991336257864b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -82,30 +82,28 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/com.termux/files
 MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/com.termux/files/home/.gradle/caches/transforms-3/38689292cf4284f31b98a9fea3dd7fa6/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/transforms-3/de0b81006a28ceb4b85ff59b624487b7/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-	android:supportsRtl
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:8:9-35
 	android:label
 		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:7:9-35
 	android:allowBackup
 		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:9:9-48
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:8:9-65
 activity#com.redteam.app.MainActivity
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:11:9-18:20
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:10:9-17:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:13:13-36
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:12:13-41
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:11:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:14:13-17:29
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml:15:27-74
 uses-sdk
 INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/com.termux/files/home/RedTeamApp/app/src/main/AndroidManifest.xml

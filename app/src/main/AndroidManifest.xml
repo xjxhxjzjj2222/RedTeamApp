@@ -5,8 +5,7 @@
     <application
         android:allowBackup="true"
         android:label="RedTeamApp"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.RedTeamApp">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <activity
             android:name=".MainActivity"
