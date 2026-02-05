@@ -1,10 +1,1 @@
-package com.redteam.app.modules
-
-object ModuleRegistry {
-    val allModules = listOf(
-        ReconModule,
-        ScanModule,
-        SimulationModule,
-        ReportModule
-    )
-}
+package com.redteam.app.modules\n\ndata class ToolModule(val id:String,val name:String,val desc:String)\n\nobject ModuleRegistry{\n  val all=listOf(\n    ToolModule(\"diag\",\"Diagnostics\",\"Environment & device checks\"),\n    ToolModule(\"net\",\"Network\",\"Connectivity & packet visibility\"),\n    ToolModule(\"perm\",\"Permissions\",\"Permission status viewer\"),\n    ToolModule(\"log\",\"Logs\",\"Structured app logs\"),\n    ToolModule(\"util\",\"Utilities\",\"Encoders & helpers\")\n  )\n}

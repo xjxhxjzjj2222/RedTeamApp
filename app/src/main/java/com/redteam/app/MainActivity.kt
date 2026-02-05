@@ -1,1 +1,5 @@
-package com.redteam.app; import android.os.*; import androidx.activity.*; import androidx.activity.compose.*; import com.redteam.app.ui.*; import com.redteam.app.modules.*; class MainActivity:ComponentActivity(){override fun onCreate(b:Bundle?){super.onCreate(b); ModuleRegistry.r(EnvAuditModule()); setContent{Dashboard()}}}
+package com.redteam.app\n\nimport android.os.Bundle\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.recyclerview.widget.LinearLayoutManager\nimport androidx.recyclerview.widget.RecyclerView\nimport android.view.ViewGroup\nimport android.widget.TextView\nimport com.redteam.app.modules.ModuleRegistry\n\nclass MainActivity:AppCompatActivity(){\n  override fun onCreate(b:Bundle?){super.onCreate(b);setContentView(R.layout.activity_main)\n    val rv=findViewById<RecyclerView>(R.id.list)\n    rv.layoutManager=LinearLayoutManager(this)\n    rv.adapter=object:RecyclerView.Adapter<VH>(){\n      override fun onCreateViewHolder(p:ViewGroup,v:Int)=VH(TextView(p.context).apply{setPadding(24,24,24,24);textSize=16f;setTextColor(0xFF00FF9C.toInt())})\n      override fun getItemCount()=ModuleRegistry.all.size\n      override fun onBindViewHolder(h:VH,i:Int){val m=ModuleRegistry.all[i];h.t.text=\"${}{m.name}  •  ${}{m.desc}"}
+    }
+  }
+}
+class VH(val t:TextView):RecyclerView.ViewHolder(t)
