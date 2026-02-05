@@ -1,1 +1,10 @@
-package com.redteam.app.modules\n\nobject ModuleRegistry {\n val modules = listOf(ReconModule, AuditModule, SimulationModule)\n}
+package com.redteam.app.modules
+
+object ModuleRegistry {
+    val allModules = listOf(
+        ReconModule,
+        ScanModule,
+        SimulationModule,
+        ReportModule
+    )
+}
