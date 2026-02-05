@@ -1,7 +1,7 @@
+plugins { id 'com.android.application'; id 'org.jetbrains.kotlin.android' }
 android {
     namespace "com.example.redteamapp"
     compileSdk 34
-
     defaultConfig {
         applicationId "com.example.redteamapp"
         minSdk 24
@@ -9,7 +9,6 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
     signingConfigs {
         release {
             storeFile file("../redteam.keystore")
@@ -18,28 +17,21 @@ android {
             keyPassword "16878890"
         }
     }
-
     buildTypes {
         release {
             signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile(
-                "proguard-android-optimize.txt"
-            ), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
         debug {
             minifyEnabled false
             shrinkResources false
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+    kotlinOptions { jvmTarget = "17" }
 }
