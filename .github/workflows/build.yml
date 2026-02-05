@@ -1,1 +1,31 @@
-name: Android Full CI\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-java@v4\n        with:\n          distribution: temurin\n          java-version: 17\n      - name: Decode keystore\n        run: echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 -d > keystore.jks\n      - name: Build APK+AAB\n        env:\n          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}\n          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}\n          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}\n        run: ./gradlew assembleRelease bundleRelease\n      - uses: actions/upload-artifact@v4\n        with:\n          name: outputs\n          path: |\n            app/build/outputs/apk/release/*.apk\n            app/build/outputs/bundle/release/*.aab
+name: Android FAST CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx3g -Dkotlin.incremental=true -Dorg.gradle.parallel=true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+
+      - name: Grant Gradle permission
+        run: chmod +x gradlew
+
+      - name: Build Release (FAST)
+        run: ./gradlew assembleRelease --build-cache --parallel --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: app/build/outputs/apk/release/*.apk
