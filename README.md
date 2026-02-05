@@ -1,0 +1,1 @@
+# RedTeamApp\n\nLegal red-team training framework.\n\n## Modules\n- Recon: asset visibility\n- Audit: config review\n- Simulation: defense drills\n- Report: JSON output\n\n> For education and authorized testing only.
