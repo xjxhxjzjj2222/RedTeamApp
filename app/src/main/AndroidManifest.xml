@@ -8,14 +8,13 @@
         android:theme="@style/Theme.App">
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name=".ui.MainActivity" />
-                <category android:name=".ui.MainActivity" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
     </application>
-
 </manifest>
