@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RedTeamApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize if needed -->
+    </style>
+</resources>
