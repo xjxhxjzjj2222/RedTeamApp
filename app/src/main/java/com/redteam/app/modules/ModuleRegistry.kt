@@ -1,1 +1,5 @@
-package com.redteam.app.modules\n\nimport android.content.Context\nimport org.json.JSONObject\n\ndata class ToolModule(val id:String,val name:String,val desc:String,var enabled:Boolean=true){ fun status(ctx:Context)=if(enabled)\"READY\" else \"OFF\"; fun run(ctx:Context)=JSONObject(mapOf(\"id\" to id,\"name\" to name,\"status\" to status(ctx))) }\n\nobject FeatureFlags{ private val m=mutableMapOf<String,Boolean>(); fun isOn(id:String)=m[id]?:true; fun set(id:String,on:Boolean){m[id]=on}}\n\nobject ModuleRegistry{ val all=listOf(\n  ToolModule(\"diag\",\"Diagnostics\",\"Environment checks\"),\n  ToolModule(\"net\",\"Network\",\"Connectivity viewer\"),\n  ToolModule(\"perm\",\"Permissions\",\"Permission states\"),\n  ToolModule(\"log\",\"Logs\",\"Structured logs\"),\n  ToolModule(\"util\",\"Utilities\",\"Encoders & helpers\")\n)}
+package com.redteam.app.modules
+
+object ModuleRegistry {
+    val modules = emptyList<Any>()
+}
