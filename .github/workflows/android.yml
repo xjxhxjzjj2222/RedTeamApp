@@ -1,6 +1,9 @@
 permissions:
   contents: write
 
+permissions:
+  contents: write
+
 name: Build APK
 
 on:
