@@ -1,1 +1,7 @@
-<resources><style name=\"Theme.RedTeam\" parent=\"Theme.Material3.Dark\"><item name=\"android:windowBackground\">@drawable/matrix_bg</item><item name=\"colorPrimary\">#00FF9C</item></style></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RedTeamApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>
