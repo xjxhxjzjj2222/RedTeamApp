@@ -1,1 +1,1 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android"><gradient android:startColor="#001F0F" android:endColor="#000000" android:angle="270"/></shape>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="360dp" android:height="640dp" android:viewportWidth="360" android:viewportHeight="640"><path android:fillColor="#0F2027" android:pathData="M0,0h360v640h-360z"/></vector>
