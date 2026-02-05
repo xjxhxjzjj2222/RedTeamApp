@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:label="RedTeamApp"
-        android:theme="@style/Theme.RedTeam">
+        android:theme="@style/Theme.App">
 
         <activity
             android:name="com.redteam.app.ui.MainActivity"
