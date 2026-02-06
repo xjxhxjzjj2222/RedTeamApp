@@ -1,1 +1,7 @@
-package com.redteam.app.modules; import android.content.*; interface Module{val id:String;val name:String;var enabled:Boolean;fun run(c:Context,log:(String)->Unit)} object ModuleRegistry{private val l=mutableListOf<Module>();fun r(m:Module)=l.add(m);fun a()=l;fun t(id:String,on:Boolean){l.find{it.id==id}?.enabled=on};fun run(c:Context,log:(String)->Unit){l.filter{it.enabled}.forEach{it.run(c,log)}}}
+package com.redteam.app.modules
+
+object ModuleCore {
+    fun init() {
+        ModuleRegistry.registerAll()
+    }
+}
